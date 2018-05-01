@@ -133,8 +133,11 @@ public class measurementConverter extends javax.swing.JFrame {
      /**
     *These are the variables used in the program to find the conversion wanted and the measurement that has been put into the GUI.
     */
+	
 	double conversion = Double.parseDouble (conversionInput.getText());
-        double measurement = Double.parseDouble (measureInput.getText());
+        
+	double measurement = Double.parseDouble (measureInput.getText());
+	
 	double convert = 0.0;
         
         /**
