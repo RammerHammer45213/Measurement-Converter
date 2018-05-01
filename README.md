@@ -2,9 +2,9 @@
 import java.text.DecimalFormat;
 
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * RaCoc9605
+ * ICS3U
+ * This program is a GUI-based program that converts multiple measurements.
  */
 
 /**
@@ -128,13 +128,23 @@ public class measurementConverter extends javax.swing.JFrame {
         pack();
     }// </editor-fold>                        
 
-    private void measureButtonActionPerformed(java.awt.event.ActionEvent evt) {                                              
+    private void measureButtonActionPerformed(java.awt.event.ActionEvent evt) {
+    
+    /**
+    *These are the variables used in the program to find the conversion wanted and the measurement that has been put into the GUI
+    */
         double conversion = Double.parseDouble (conversionInput.getText());
         double measurement = Double.parseDouble (measureInput.getText());
         double convert = 0.0;
         
+        /**
+        *This formats the outputted measurements to be displayed at a maximum of two decimal places.
+        */
         DecimalFormat x = new DecimalFormat ("##.##");
         
+        /**
+        *These if statements do the conversion and display them onto a label on the GUI.
+        */
         if (conversion == 1)
         {
             convert = measurement * 2.54;
